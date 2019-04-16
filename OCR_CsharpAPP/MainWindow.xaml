@@ -1,0 +1,76 @@
+﻿<Window x:Class="OCR_CsharpAPP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OCR_CsharpAPP"
+        mc:Ignorable="d"
+        Title="OCR_Application" Height="403.5" Width="707" Foreground="#FFA41717">
+    <Grid Background="Green" Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="377*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Totext" BorderThickness="2" HorizontalAlignment="Left" Margin="132.558,328,0,0" VerticalAlignment="Top" Width="110" Height="35" Grid.Column="2" Click="ShowText">
+            <StackPanel>
+                <Image Source="C:\Users\USER\source\repos\OCR_CsharpAPP\OCR_CsharpAPP\Picture\q.png" Height="16"></Image>
+            </StackPanel>
+        </Button>
+        <Button x:Name="Listen" BorderThickness="2" HorizontalAlignment="Left" Margin="367.558,328,0,0" VerticalAlignment="Top" Width="106" Height="35" Grid.Column="2" Click="Text_to_speech">
+            <StackPanel>
+                <Image Source="C:\Users\USER\source\repos\OCR_CsharpAPP\OCR_CsharpAPP\Picture\c.png" Height="16"></Image>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="Stop" BorderThickness="2" HorizontalAlignment="Left" Margin="494.558,328,0,0" VerticalAlignment="Top" Width="106" Height="35" Grid.Column="2" Click="StopSpeak">
+            <StackPanel>
+                <Image Source="C:\Users\USER\source\repos\OCR_CsharpAPP\OCR_CsharpAPP\Picture\s.png" Height="16"></Image>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="Picture" BorderThickness="2" HorizontalAlignment="Left" Margin="23.558,328,0,0" VerticalAlignment="Top" Width="87" Height="35" Grid.Column="2" Click="Findpic">
+            <StackPanel>
+                <Image Source="C:\Users\USER\source\repos\OCR_CsharpAPP\OCR_CsharpAPP\Picture\b.png" Height="16"></Image>
+            </StackPanel>
+        </Button>
+        <DockPanel Background="Black" Grid.Column="1" Height="259" LastChildFill="False" Margin="10.199,51,379,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Image x:Name="ShowImage" Grid.Column="2" HorizontalAlignment="Left" Height="239" Margin="15,10,0,0" VerticalAlignment="Top" Width="270" OpacityMask="#FFEC5858"/>
+        </DockPanel>
+        <DockPanel Background="Brown"  Grid.Column="2" HorizontalAlignment="Left" Height="263" LastChildFill="False" Margin="333,51,0,0" VerticalAlignment="Top" Width="313">
+            <TextBox TextAlignment="Left" Background="White" Foreground="Black" x:Name="showtext" Height="228" TextWrapping="Wrap" VerticalAlignment="Center" Width="299" HorizontalAlignment="Center" Margin="5,18,0,17"/>
+        </DockPanel >
+        <Label FontWeight="Heavy" Foreground="SpringGreen" Content="OCR Application" HorizontalAlignment="Center" Height="46" Margin="0,0,524,0" VerticalAlignment="Top" Width="173" Grid.ColumnSpan="3" FontSize="20"/>
+        <Image Source="C:\Users\USER\source\repos\OCR_CsharpAPP\OCR_CsharpAPP\Picture\alpa.png" Grid.Column="2" HorizontalAlignment="Left" Height="46" Margin="180.558,-2,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="35.949"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source="C:\Users\USER\source\repos\OCR_CsharpAPP\OCR_CsharpAPP\Picture\Blpa.png" Grid.Column="2" HorizontalAlignment="Left" Height="36" Margin="307.558,4,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-33.744"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source="C:\Users\USER\source\repos\OCR_CsharpAPP\OCR_CsharpAPP\Picture\clpa.png" Grid.Column="2" HorizontalAlignment="Left" Height="46" Margin="470.558,2,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="24.282"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+    </Grid>
+</Window>
